@@ -7,9 +7,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }	
-	
+
+	.jumbotron{padding-top:90px !important ;}
+	.jumbotron .container {
+    max-width: 70%;
+}
 .container.theme-showcase {
-    background: rgba(212, 212, 212, 0.8);
+    background: rgba(212, 212, 212, 0.7);
 }	
 	
 	nav.navbar.navbar-default {
@@ -58,6 +62,8 @@ a { color: white; text-decoration: none; }
 	span.skill {
     font-weight: bold;
 }
+	
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {background-color: #356;}
 	</style>
 <head>
 <meta charset="utf-8">
@@ -79,27 +85,47 @@ a { color: white; text-decoration: none; }
     <![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand">SAM WARD</a></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-             <li><a href="#">Link</a></li>
-             
-      </ul>
-</div>
-    <!-- /.navbar-collapse --> 
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#top">SAM WARD</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li class="">
+            <a id="nav-experience" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#experience-section">Experience</a>
+            <a id="nav-experience" class="hidden-xs" href="#experience-section">Experience</a>
+          </li>
+          <li>
+            <a id="nav-skills" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#skills-section">Skills</a>
+            <a id="nav-skills" class="hidden-xs" href="#skills-section">Skills</a>
+          </li>
+                  <li>
+            <a id="nav-qualifications" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#qualification-section">Qualifications</a>
+            <a id="nav-qualifications" class="hidden-xs" href="#qualification-section">Qualifications</a>
+          </li>
+          <li>
+            <a id="nav-contact" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#about">About Me</a>
+            <a id="nav-contact" class="hidden-xs" href="#about">About Me</a>
+          </li>
+          <li>
+            <a id="nav-contact" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#contact-section">Contact</a>
+            <a id="nav-contact" class="hidden-xs" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
   </div>
   <!-- /.container-fluid --> 
 </nav>
-<div class="jumbotron">
+<div class="jumbotron" id="top">
       <div class="container theme-showcase" role="main">
       <!-- Main jumbotron for a primary marketing message or call to action -->
         <h1>Curriculum Vitae</h1>
@@ -108,11 +134,11 @@ a { color: white; text-decoration: none; }
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Find out more about me »</a></p>
         
       </div>
-     
+     <div id="experience-section"></div>
       </div>
 
 	<!-- Accordion Div  -->
-<div class="container-fluid">
+<div class="container">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -265,12 +291,12 @@ a { color: white; text-decoration: none; }
     </div>
   </div> 
 </div>	     
-   
+   <div id="skills-section"></div>
   <hr>    <div class="container">
 
     <div class="text-center col-md-12">
   
-   <div class="section well" id="skills-section">
+   <div class="section well">
       <h2 class="section-title hideme" style="opacity: 1;">Skills &amp; Tools</h2>
       
       <!-- END row  1-->
@@ -356,8 +382,9 @@ a { color: white; text-decoration: none; }
       </div>
       <!-- END row -->
     </div>
+    <div id="qualification-section"></div>
   </div>
-  <div class="section" id="certification-section">
+  <div class="section">
     <div class="container">
       <h2 class="text-center">Qualifications</h2>
       <hr>
@@ -407,6 +434,18 @@ a { color: white; text-decoration: none; }
     </div>
   </div>
   <hr>
+  
+  Hobbies
+  
+ Skiing
+ Travel
+ Music
+ adventure
+ football
+ gaming
+ 
+ https://codepen.io/gil--/pen/bNxZWg 
+  
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="file:///C|/Users/rward2/Desktop/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/jquery-1.11.3.min.js"></script>
 
